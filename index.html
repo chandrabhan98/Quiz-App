@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+
+    <header class="container">
+        <h1 id="heading">Online Quiz</h1>
+    </header>
+    <div class="container mt-5 topic-size">
+    <h2 id="timer" class="timer">Time </h2>
+    <p id="setTimer" class="timer"><span class="h2"> 2 : 00</span></p> <br>
+    <label id="topics" for="topic">
+        <h2>Topic</h2>
+    </label>
+    <select class="form-select  topic-size topic-label" name="topic" id="topic" onchange="setTopic()">
+        <option selected="">Select Topic</option>
+        <option id="history">History </option>
+        <option id="political">Political</option>
+    </select>
+    <button id="start" class="btn btn-primary mt-2" style="display: block;">Start</button>
+    </div>
+
+
+    <div id="questionDiv" class="container main-div">
+
+        <div id="questions">
+            <h2>Defaullt Questions?</h2>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <input id="ans1" type="radio" name="answer" class="ans">
+                    <label id="option1" for="ans1"> option 1</label>
+                </li>
+                <li>
+                    <input id="ans2" type="radio" name="answer" class="ans">
+                    <label id="option2" for="ans2">option 2</label>
+                </li>
+                <li><input id="ans3" type="radio" name="answer" class="ans">
+                    <label id="option3" for="ans3">option 3</label>
+                </li>
+                <li><input id="ans4" type="radio" name="answer" class="ans">
+                    <label id="option4" for="ans4">option 4</label>
+                </li>
+
+            </ul>
+
+        </div>
+        <button class="btn btn-primary btn-2" type="submit" id="submit" disabled click="showScore()">Submit</button>
+        <button id="nextbtn" class="btn btn-primary btn-1">Next</button>
+    </div>
+
+
+    <div id="scoreCard" class="score" >
+        <button class="btn btn-primary" onclick="location.reload()">play again</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+
+
+
+</body>
+
+</html>

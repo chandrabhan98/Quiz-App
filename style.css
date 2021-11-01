@@ -1,0 +1,45 @@
+.topic-size{
+    width: 50%;
+}
+.timer{
+    display: inline;
+}
+.topic-label{
+    margin-right: 2%;
+    display:inline;
+}
+.main-div{
+    width: 50%;
+    height: 90%;
+    background-color: rgb(177, 238, 238);
+    margin-top: 10%;
+}
+
+#questionDiv{
+    display: none;
+}
+
+#scoreCard{
+    display: none;
+}
+ul{
+    list-style:none;
+}
+.btn-1{
+    margin-right: 5%;
+    float:right;
+}
+.btn-2{
+    margin-right: 10%;
+    float:right;
+}
+input{
+    cursor: pointer; 
+}
+.score{
+    width: 50%;
+    height: 90%;
+    background-color: rgb(177, 238, 238);
+    margin-left: 25%;
+    margin-top: 10%;
+}
